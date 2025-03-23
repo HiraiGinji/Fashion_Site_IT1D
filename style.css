@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Adlery Pro';
+    src: url('fonts/Adlery Pro/Adlery-Pro-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adlery Pro Blockletter';
+    src: url('fonts/Adlery Pro/Adlery-Pro-Blockletter-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adlery Swash';
+    src: url('fonts/Adlery Pro/Adlery-Swash-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto 0 auto;
+    max-width: 1366px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 40px;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    width: 380px;
+    height: 380px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3)
+}
+
+.circle-text {
+    color: white;
+    font-size: 95px;
+    font-weight: bold;
+    font-family: 'Adlery Pro', sans-serif;
+    text-shadow: 2px 2px 0 #8e0a0a, -2px -2px 0 #8e0a0a, 2px -2px 0 #8e0a0a, -2px 2px 0 #8e0a0a;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 100px;
+    right: 400px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.social-icons .facebook i {
+    color: #3b5998; /* Facebook icon color */
+}
+
+.social-icons .youtube i {
+    color: #ff0000; /* YouTube icon color */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
