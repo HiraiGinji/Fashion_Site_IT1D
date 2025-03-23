@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresses - Tobyofuku</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Tokyofuku</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Outfits</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Acces.</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Street Kei</a></li>
+                        <li><a href="#">Visual Kei</a></li>
+                        <li><a href="#">Lolita</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fit & Styles</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Color Combo</a></li>
+                        <li><a href="#">Physique</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Editorial</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Designers</a>
+                    <ul class="dropdown">
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dresses-intro">
+            <h1>DRESSES</h1>
+        </section>
+
+        <section class="dress-display">
+            <div class="dress-images" id="dressImagesContainer">
+                <div class="dress-main" id="dress1">
+                    <img src="images/MIDI_dress.png" alt="Midi Dress">
+                </div>
+                <div class="dress-variation-small" id="dress2">
+                    <img src="images/MIDI_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress3">
+                    <img src="images/MIDI_dress.png" alt="Small Dress Variation 2">
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br>
+        <section class="dress-details">
+            <div class="details-container">
+                <h2>Name of Dress</h2>
+                <p class="brand">Brand</p>
+                <div class="material-care">
+                    <h3>Material and Care</h3>
+                    <p><strong>Material:</strong> 88% Polyester, 12% Elastane</p>
+                    <p><strong>Care Label:</strong> Machine washable</p>
+                </div>
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>Add a detailed description of the dress here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dress-model">
+            <div class="model-image">
+                <img src="images/dress-model.jpg" alt="Dress on Model">
+            </div>
+            <div class="variations">
+                <h2>Variations</h2>
+                <img src="images/dress-variation-gray.jpg" alt="Gray Dress Variation">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tokyołuku. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentDress = 1;
+
+        function scrollDresses() {
+            const dress1 = document.getElementById('dress1');
+            const dress2 = document.getElementById('dress2');
+            const dress3 = document.getElementById('dress3');
+
+            dress1.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress2.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress3.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+
+            if (currentDress === 3) {
+                dress1.style.display = 'none';
+            } else {
+                dress1.style.display = 'block';
+            }
+
+            if (currentDress === 1) {
+                dress1.classList.add('dress-main');
+                dress1.style.marginLeft = '290px';
+
+                dress2.classList.add('dress-variation-small-right');
+                dress2.style.marginLeft = '800px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '1200px';
+            } else if (currentDress === 2) {
+                dress2.classList.add('dress-main');
+                dress2.style.marginLeft = '290px';
+
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-100px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '800px';
+            } else if (currentDress === 3) {
+                dress3.classList.add('dress-main');
+                dress3.style.marginLeft = '290px';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-100px';
+
+            }
+
+            currentDress++;
+            if (currentDress > 3) {
+                currentDress = 1;
+            }
+        }
+
+        scrollDresses();
+
+        setInterval(scrollDresses, 10000);
+    </script>
+</body>
+</html>
