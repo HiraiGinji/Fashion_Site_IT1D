@@ -19,31 +19,49 @@
     font-style: normal;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    background-image: url(images/FASHIONBG3.png);
+    background-repeat: no-repeat;
+    background-size: 1450px;
+    background-position-x: 234px;
+    background-position-y: -400px;
 }
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: right;
     padding: 20px 40px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px auto 0 auto;
+    margin: 5px auto 0 auto;
     max-width: 1366px;
     position: relative;
 }
 
 .logo {
     position: absolute;
-    left: 40px;
-    font-size: 1.8em;
-    font-weight: bold;
-    font-family: 'Pacifico', cursive;
+    top: 15px;
+    left: 35px;
+    font-size: 40px;
+    font-family: 'Adlery Pro', sans-serif;
+    color: #e62727;
+    text-shadow: 1px 1px 0 #8e0a0a, -1px -1px 0 #8e0a0a, 1px -1px 0 #8e0a0a, -1px 1px 0 #8e0a0a;
+    z-index: 10;
 }
 
 nav ul {
@@ -54,27 +72,18 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 58px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    display: inline-block;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    max-width: 1366px;
-    margin: 0 auto;
-}
 
 .content {
     text-align: center;
@@ -82,7 +91,7 @@ main {
 }
 
 .circle {
-    width: 380px;
+    width: 400px;
     height: 380px;
     background-color: #e74c3c;
     border-radius: 50%;
@@ -93,17 +102,33 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3)
+    transform: translate(-50%, 50%);
+    box-shadow: 0 4px 8px rgba(139, 0, 0, 0.5);
+    overflow: hidden;
+    position: absolute;
 }
 
-.circle-text {
-    color: white;
-    font-size: 95px;
-    font-weight: bold;
-    font-family: 'Adlery Pro', sans-serif;
-    text-shadow: 2px 2px 0 #8e0a0a, -2px -2px 0 #8e0a0a, 2px -2px 0 #8e0a0a, -2px 2px 0 #8e0a0a;
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 380px;
+    height: 370px;
+    border-radius: 50%;
+    box-shadow: -15px 0 5px 10px #e62727;
 }
+
+
+.circle-text {
+    margin-top: 50px;
+    color: white;
+    font-size: 100px;
+    font-family: 'Adlery Pro', sans-serif;
+    text-shadow: 2px 2px 0 #8e0a0a, -4px -4px 0 #8e0a0a, 2px -2px 0 #8e0a0a, -4px 4px 0 #8e0a0a;
+    z-index: 2;
+}
+
 
 .social-icons {
     position: fixed;
