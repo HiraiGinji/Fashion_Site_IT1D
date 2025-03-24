@@ -1,0 +1,569 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeans - TokyoFuku</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">TokyoFuku</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Outfits</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="clothes.html">Clothes</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Acces.</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Street Kei</a></li>
+                        <li><a href="#">Visual Kei</a></li>
+                        <li><a href="#">Lolita</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fit & Styles</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Color Combo</a></li>
+                        <li><a href="#">Physique</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Editorial</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Designers</a>
+                    <ul class="dropdown">
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dresses-intro">
+            <h1>JEANS</h1>
+        </section>
+
+        <section class="dress-display">
+            <div class="dress-images" id="dressImagesContainer">
+                <div class="dress-main" id="dress1">
+                    <img src="images/BAGGY_jeans.png" alt="Midi Dress">
+                </div>
+                <div class="dress-variation-small" id="dress2">
+                    <img src="images/FLARED_jeans.png">
+                </div>
+                <div class="dress-variation-small" id="dress3">
+                    <img src="images/PRINTED_jeans.png">
+                </div>
+                <div class="dress-variation-small" id="dress4">
+                    <img src="images/DENIM_jeans.jpg">
+                </div>
+                <div class="dress-variation-small" id="dress5">
+                    <img src="images/MATERNITY_jeans.png">
+                </div>
+                <div class="dress-variation-small" id="dress6">
+                    <img src="images/CARGO_jeans.png">
+                </div>
+                <div class="dress-variation-small" id="dress7">
+                    <img src="images/TWILL_jeans.png">
+                </div>
+                <div class="dress-variation-small" id="dress8">
+                    <img src="images/PETITE_jeans.png">
+                </div>
+                <div class="dress-variation-small" id="dress9">
+                    <img src="images/STRAIGHT_jeans.png">
+                </div>
+                <div class="dress-variation-small" id="dress10">
+                    <img src="images/WIDE_jeans.png">
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br><br>
+        <section class="dress-details">
+            <div class="details-container">
+                <div class="details-content">
+                    <div class="dress-image">
+                        <img src="images/Front_Sweetheart.jpg" alt="Dress Image">
+                    </div>
+        
+                    <div class="dress-text">
+                        <h2>Name of Dress</h2>
+                        <p class="brand">Brand</p>
+                        <div class="material-care">
+                            <h3>Material and Care</h3>
+                            <p><strong>Material:</strong> 88% Polyester, 12% Elastane</p>
+                            <p style="border-bottom: 2px solid #FFFFFF;"><strong>Care Label:</strong> Machine washable</p>
+                        </div>
+                        <div class="description">
+                            <p>Add a detailed description of the dress here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TokyoFuku. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentDress = 1;
+    
+        const dressData = [
+            {
+                name: "Baggy Fit Jeans",
+                brand: "H&M",
+                material: "RECYCLED POLYESTER, BCI COTTON, BRASS, ZINC, RECYCLED COTTON, ALUMINIUM, POLYAMIDE, NATURAL RUBBER.",
+                care: "Machine Washable",
+                description: "5-pocket jeans in cotton denim with a loose fit through the hip and thigh and a dropped crotch. Adjustable elastication at the waist and a zip fly with a button.",
+                frontImage: "images/Front_Baggy.jpg",
+                backImage: "images/Back_Baggy.jpg"
+            },
+            {
+                name: "Washed Flared Cotton Trousers",
+                brand: "Monki",
+                material: "100% Cotton",
+                care: "Machine washable",
+                description: "A pair of flared high-waisted trousers crafted from a washed cotton twill. They feature a classic 5-pocket design, a zip fly, and straight hems.",
+                frontImage: "images/Front_Flared.jpg",
+                backImage: "images/Back_Flared.jpg"
+            },
+            {
+                name: "Printed Flared Trousers",
+                brand: "Mango",
+                material: "48% Viscose, 30% Polyester, 22% Polyamide",
+                care: "Machine washable",
+                description: "These trousers feature a dual-tone design with a stripe pattern and a fit and flare silhouette. They have a high-rise waist with an elasticized waistband for comfort. Crafted from a viscose blend, it's noted that sizing runs one size larger.",
+                frontImage: "images/Front_Printed.jpg",
+                backImage: "images/Back_Printed.jpg"
+            },
+            {
+                name: "TWide-Leg Fluid Denim Trousers",
+                brand: "COS",
+                material: "62% Organic Cotton, 38% TENCEL™ Lyocell",
+                care: "Machine washable",
+                description: "The COS womenswear team approached denim with a fresh perspective this season. Crafted from a fluid blend of organic cotton and TENCEL™ Lyocell, these trousers have wide, full-length legs that borrow from tailoring, while the elasticated waistband and tonal drawcord reference our elevated leisurewear. The mid-blue wash is precisely colour matched to the coordinating top.",
+                frontImage: "images/Front_Denim1.jpg",
+                backImage: "images/Back_Denim1.jpg"
+            },
+            {
+                name: "Blue Maternity Pants",
+                brand: "DeFacto",
+                material: "81% Cotton, 2% Elastane, 17% Polyester",
+                care: "Machine washable",
+                description: "Blue Maternity Pants made in Türkiye",
+                frontImage: "images/Front_Maternity.jpg",
+                backImage: "images/Back_Maternity.jpg"
+            },
+            {
+                name: "Wide-Cut Cargo Jeans",
+                brand: "Trendyol",
+                material: "100% Cotton",
+                care: "Machine washable",
+                description: "These washed cargo jeans feature a mid-rise waist, a regular fit, and a zip with button fastening. They include open pockets, cargo pockets, and back patched pockets. Crafted from cotton, they are made in Türkiye.",
+                frontImage: "images/Front_Cargo.jpg",
+                backImage: "images/Back_Cargo.jpg"
+            },
+            {
+                name: "Frayed Low Waist Twill Trousers",
+                brand: "Monki",
+                material: "98% Cotton, 2% Elastane",
+                care: "Machine washable",
+                description: "These low-waisted twill trousers offer a regular fit with a unique cut-off waistband and frayed top hem. They feature a classic 5-pocket design, zip closure, and raw hems. Made from a blend of 98% cotton and 2% elastane, they have a long length.",
+                frontImage: "images/Front_Twill.jpg",
+                backImage: "images/Back_Twill.jpg"
+            },
+            {
+                name: "Seasalt Cornwall Petite Grey Lamledra Trousers",
+                brand: "Seasalt Cornwall",
+                material: "98% Organic Cotton, 2% Elastane",
+                care: "Machines wash at 30 degrees with similar colours",
+                description: "Soft needlecord trousers, the perfect winter alternative to jeans. Sizes 18-28 have an elasticated back waist.",
+                frontImage: "images/Front_Petite.jpg",
+                backImage: "images/Back_Petite.jpg"
+            },
+            {
+                name: "Straight-Leg Lightweight Denim Trousers",
+                brand: "COS",
+                material: "100% TENCEL™ Lyocell",
+                care: "Machine Washable",
+                description: "The COS menswear team are experts in creating pieces that are equal parts relaxed and refined. Debuting as part of our High Summer drop, these trousers are crafted from fluid, lightweight TENCEL™ Lyocell in a deep-blue wash that complements the coordinating shirt. They're shaped with relaxed, straight legs and have an elasticated waistband and bar-tacked side pockets for a clean finish.",
+                frontImage: "images/Front_Straight.jpg",
+                backImage: "images/Back_Straight.jpg"
+            },
+            {
+                name: "Wide-Leg Fluid Denim Trousers",
+                brand: "COS",
+                material: "Shell: 62% Organic Cotton, 38% TENCEL™ Lyocell",
+                care: "Machine Wash Cold",
+                description: "The COS womenswear team approached denim with a fresh perspective this season. Crafted from a fluid blend of organic cotton and TENCEL™ Lyocell, these washed-black trousers have wide, full-length legs that borrow from tailoring, while the elasticated waistband and tonal drawcord reference our elevated leisurewear. Relaxed fit Side-seam pockets, back patch pocket, Organic cotton is grown from non-genetically modified seeds without chemical fertilisers or pesticides",
+                frontImage: "images/Front_Wide.jpg",
+                backImage: "images/Back_Wide.jpg"
+            }
+        ];
+    
+        function updateDressDetails(dressIndex) {
+            const dress = dressData[dressIndex];
+    
+            document.querySelector('.dress-text h2').innerText = dress.name;
+            document.querySelector('.brand').innerText = dress.brand;
+            document.querySelector('.material-care p').innerHTML = `<strong>Material:</strong> ${dress.material}`;
+            document.querySelector('.material-care p + p').innerHTML = `<strong>Care Label:</strong> ${dress.care}`;
+            document.querySelector('.description p').innerText = dress.description;
+            document.querySelector('.dress-image img').src = dress.frontImage;
+    
+            const dressImageElement = document.querySelector('.dress-image img');
+            
+            dressImageElement.addEventListener('mouseenter', function() {
+                dressImageElement.src = dress.backImage;
+            });
+    
+            dressImageElement.addEventListener('mouseleave', function() {
+                dressImageElement.src = dress.frontImage;
+            });
+        }
+    
+        function scrollDresses() {
+            const dress1 = document.getElementById('dress1');
+            const dress2 = document.getElementById('dress2');
+            const dress3 = document.getElementById('dress3');
+            const dress4 = document.getElementById('dress4');
+            const dress5 = document.getElementById('dress5');
+            const dress6 = document.getElementById('dress6');
+            const dress7 = document.getElementById('dress7');
+            const dress8 = document.getElementById('dress8');
+            const dress9 = document.getElementById('dress9');
+            const dress10 = document.getElementById('dress10');
+
+            dress1.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress2.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress3.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress4.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress5.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress6.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress7.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress8.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress9.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress10.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+
+            dress1.style.display = 'block';
+            dress2.style.display = 'block';
+            dress3.style.display = 'block';
+            dress4.style.display = 'block';
+            dress5.style.display = 'block';
+            dress6.style.display = 'block';
+            dress7.style.display = 'block';
+            dress8.style.display = 'block';
+            dress9.style.display = 'block';
+            dress10.style.display = 'block';
+
+            if (currentDress === 10) {
+                dress1.style.display = 'none';
+            } else {
+                dress1.style.display = 'block';
+            }
+
+            if (currentDress === 1) {
+                dress1.classList.add('dress-main');
+                dress1.style.marginLeft = '290px';
+
+                dress2.classList.add('dress-variation-small-right');
+                dress2.style.marginLeft = '800px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '1200px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1600px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '2000px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2400px';
+                
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '3200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3600px';
+                
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '4000px';
+
+                updateDressDetails(0);
+            } else if (currentDress === 2) {
+                dress2.classList.add('dress-main');
+                dress2.style.marginLeft = '290px';
+
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-100px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '800px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1200px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1600px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2000px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2400px'; 
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3600px';
+                                
+                updateDressDetails(1);
+                
+            } else if (currentDress === 3) {
+                dress3.classList.add('dress-main');
+                dress3.style.marginLeft = '290px';
+
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-500px';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-100px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '800px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1200px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1600px'; 
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2000px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2400px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3200px';
+
+                updateDressDetails(2);
+            } else if (currentDress === 4) {
+                dress1.style.display = 'none';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-500px';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-100px';
+
+                dress4.classList.add('dress-main');
+                dress4.style.marginLeft = '290px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '800px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1200px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1600px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2000px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2400px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2800px';
+
+                updateDressDetails(3);
+            } else if (currentDress === 5) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-500px';
+
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-100px';
+
+                dress5.classList.add('dress-main');
+                dress5.style.marginLeft = '290px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '800px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1200px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1600px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2000px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2400px';
+
+                updateDressDetails(4);
+            } else if (currentDress === 6) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-500px';
+
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-100px';
+
+                dress6.classList.add('dress-main');
+                dress6.style.marginLeft = '290px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1600px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2000px';
+
+                updateDressDetails(5);
+            }
+
+             else if (currentDress === 7) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-500px';
+
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-100px';
+
+                dress7.classList.add('dress-main');
+                dress7.style.marginLeft = '290px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1600px';
+
+                updateDressDetails(6);
+            }
+
+            else if (currentDress === 8) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-500px';
+
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-100px';
+
+                dress8.classList.add('dress-main');
+                dress8.style.marginLeft = '290px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1200px';
+
+                updateDressDetails(7);
+            }
+            
+            else if (currentDress === 9) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-500px';
+
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-100px';
+
+                dress9.classList.add('dress-main');
+                dress9.style.marginLeft = '290px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '800px';
+
+                updateDressDetails(8);
+            }
+
+            else if (currentDress === 10) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.style.display = 'none';
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-500px';
+
+                dress9.classList.add('dress-variation-small');
+                dress9.style.marginLeft = '-100px';
+
+                dress10.classList.add('dress-main');
+                dress10.style.marginLeft = '290px';
+
+                updateDressDetails(9);
+            }
+
+            currentDress++;
+            if (currentDress > 10) {
+                currentDress = 1;
+            }
+        }
+
+        scrollDresses();
+
+        setInterval(scrollDresses, 10000);
+
+
+    </script>
+      
+</body>
+</html>
