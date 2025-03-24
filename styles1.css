@@ -71,7 +71,7 @@ nav ul li::before {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 17px;
+    height: 20px;
     background-color: transparent;
     z-index: 1001;
 }
@@ -79,9 +79,11 @@ nav ul li::before {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;  
+    font-size: 1.4rem;
     display: inline-block;
 }
 
@@ -135,6 +137,10 @@ main {
 
 .dresses-intro h1 {
     font-size: 2.6rem;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;  
     margin-bottom: 10px;
 }
 
@@ -158,6 +164,7 @@ main {
     margin-right: 1250px;
 }
 
+
 .dress-main,
 .dress-variation-small,
 .dress-variation-small-right {
@@ -166,22 +173,22 @@ main {
     position: absolute;
 }
 .dress-main {
-    width: 350px;
-    height: 350px;
+    width: 416px;
+    height: 600px;
     border-radius: 50%;
     margin-left: 290px;
 }
 
 .dress-variation-small {
     width: 200px;
-    height: 200px;
+    height: 288px;
     border-radius: 50%;
     margin-left: 0px;
 }
 
 .dress-variation-small-right {
     width: 200px;
-    height: 200px;
+    height: 288px;
     border-radius: 50%;
     margin-left: 600px;
 }
@@ -192,7 +199,6 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #e62727;
 }
 
 .dress-main::before,
@@ -205,43 +211,99 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    box-shadow: -15px 0 5px 10px #8e0a0a;
 }
 
 .dress-details {
-    background-color: #e9573f;
-    padding: 20px;
-    color: white;
+    background-color: #e62727;
+    padding: 5px;
+    color: FFFFFF;
 }
 
 .details-container {
-    background-color: #fff;
-    color: black;
+    background-color: #e62727;
+    color: #FFFFFF;
     padding: 20px;
+}
+
+.details-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 150px;
 }
 
 
 .dress-details h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dress-text {
+    flex: 1;
+}
+
+.dress-image {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dress-image img {
+    transition: transform 2s ease;
+}
+
+.dress-image img:hover {
+    transform: rotatey(180deg);
+}
+
+
+.dress-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .brand {
     font-size: 1.2rem;
-    color: #666;
+    color: #FFFFFF;
     margin-bottom: 20px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 15px;
 }
 
 .material-care h3,
 .description h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;  
 }
 
 .material-care p,
 .description p {
     font-size: 1rem;
-    color: #666;
+    color: #FFFFFF;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 15px;
+}
+
+.description p {
+    margin-top: 20px;
 }
 
 .dress-model {
@@ -278,11 +340,11 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: #e62727;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
     font-size: 1rem;
-    color: #666;
+    color: #ffffff;
 }

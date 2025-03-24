@@ -78,7 +78,7 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     display: inline-block;
 }
@@ -250,6 +250,10 @@ main {
 
     nav ul li a {
         font-size: 1rem;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;  
     }
 
     nav ul li .dropdown {
@@ -313,6 +317,10 @@ main {
 
     nav ul li a {
         font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;  
     }
 
     .circle {
@@ -363,6 +371,10 @@ main {
 
     nav ul li a {
         font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;  
     }
 
     .circle {
@@ -450,6 +462,11 @@ main {
         text-decoration: none;
     }
 
+    nav ul li a {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;  
     
 }
 
@@ -483,7 +500,11 @@ main {
     }
 
     nav ul li a {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;  
     }
 
     .circle {

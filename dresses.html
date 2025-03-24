@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dresses - Tobyofuku</title>
     <link rel="stylesheet" href="styles1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <div class="logo">Tokyofuku</div>
+        <div class="logo">TokyoFuku</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Outfits</a>
                     <ul class="dropdown">
                         <li><a href="#">Dresses</a></li>
@@ -61,38 +62,56 @@
                     <img src="images/MIDI_dress.png" alt="Midi Dress">
                 </div>
                 <div class="dress-variation-small" id="dress2">
-                    <img src="images/MIDI_dress.png">
+                    <img src="images/SLEVELESS_SHORT_dress.png">
                 </div>
                 <div class="dress-variation-small" id="dress3">
-                    <img src="images/MIDI_dress.png" alt="Small Dress Variation 2">
+                    <img src="images/SWEETHEART_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress4">
+                    <img src="images/PLEATED_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress5">
+                    <img src="images/SATIN_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress6">
+                    <img src="images/SQUARE_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress7">
+                    <img src="images/VISCOSE_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress8">
+                    <img src="images/RUFFLED_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress9">
+                    <img src="images/FLORA_dress.png">
+                </div>
+                <div class="dress-variation-small" id="dress10">
+                    <img src="images/BALLOON_dress.png">
                 </div>
             </div>
         </section>
 
-        <br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
         <section class="dress-details">
             <div class="details-container">
-                <h2>Name of Dress</h2>
-                <p class="brand">Brand</p>
-                <div class="material-care">
-                    <h3>Material and Care</h3>
-                    <p><strong>Material:</strong> 88% Polyester, 12% Elastane</p>
-                    <p><strong>Care Label:</strong> Machine washable</p>
+                <div class="details-content">
+                    <div class="dress-image">
+                        <img src="images/Front_Sweetheart.jpg" alt="Dress Image">
+                    </div>
+        
+                    <div class="dress-text">
+                        <h2>Name of Dress</h2>
+                        <p class="brand">Brand</p>
+                        <div class="material-care">
+                            <h3>Material and Care</h3>
+                            <p><strong>Material:</strong> 88% Polyester, 12% Elastane</p>
+                            <p style="border-bottom: 2px solid #FFFFFF;"><strong>Care Label:</strong> Machine washable</p>
+                        </div>
+                        <div class="description">
+                            <p>Add a detailed description of the dress here.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <h3>Description</h3>
-                    <p>Add a detailed description of the dress here.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="dress-model">
-            <div class="model-image">
-                <img src="images/dress-model.jpg" alt="Dress on Model">
-            </div>
-            <div class="variations">
-                <h2>Variations</h2>
-                <img src="images/dress-variation-gray.jpg" alt="Gray Dress Variation">
             </div>
         </section>
     </main>
@@ -103,17 +122,156 @@
 
     <script>
         let currentDress = 1;
-
+    
+        const dressData = [
+            {
+                name: "Sleeveless A-Line Midi Dress",
+                brand: "& Other Stories",
+                material: "63% Viscose, 37% Linen",
+                care: "Cold gentle machine wash - Do not bleach - Iron with low heat",
+                description: "Sleeveless midi dress made from a breezy material. Featuring an A-line silhouette traced with raw edge detailing. DESIGNED IN STOCKHOLM Sleeveless midi dress made from a breezy material. Featuring an A-line silhouette traced with raw edge detailing.",
+                frontImage: "images/Front_Midi.jpg",
+                backImage: "images/Back_Midi.jpg"
+            },
+            {
+                name: "Allison Sleeveless Short Dress",
+                brand: "Vero Moda",
+                material: "95% Polyester, 5% Elastane",
+                care: "Machine washable",
+                description: "Monochrome hue mini dress with frilled detail. V neckline. Regular fit. Slip on style. Sleeveless. Polyblend.",
+                frontImage: "images/Front_Sleeveless.jpg",
+                backImage: "images/Back_Sleeveless.jpg"
+            },
+            {
+                name: "Sweetheart Neck A-Line Dress In Black",
+                brand: "London Rag",
+                material: "100% Cotton",
+                care: "- Cold gentle machine wash- Do not bleach- Iron with low heat",
+                description: "Get ready for a chic look with this sweetheart neckline A-line dress from London Rag. Featuring elbow-length puff sleeves and delicate tie-up back detail, this dress is a beautiful fit for brunch, a date, or a quick weekend getaway! Style it with a pair of gladiators or white sneakers and a hobo bag!",
+                frontImage: "images/Front_Sweetheart.jpg",
+                backImage: "images/Back_Sweetheart.jpg"
+            },
+            {
+                name: "Tie-detail pleated dress",
+                brand: "H&M",
+                material: "RECYCLED POLYESTER, 50% POLYESTER, ELASTANE.",
+                care: "Machine wash at 40°, No iron, Only non-chlorine bleach when needed, Line dry, Can be dry cleaned",
+                description: "Calf-length dress in sheer chiffon with a pleated skirt. Loose fit with a round neckline, V-shaped opening at the front and butterfly sleeves in a raglan cut. Narrow elastication at the waist and decorative spaghetti ties at the sides. Partly lined.",
+                frontImage: "images/Front_Pleated.jpg",
+                backImage: "images/Back_Pleated.jpg"
+            },
+            {
+                name: "Satin Wrapped Dress",
+                brand: "G2000",
+                material: "100% Polyester",
+                care: "Machine Wash Cold. Wash dark colours separately. For light colours please avoid using detergent with optical whitener. Gentle Cycle. Do Not Bleach. Remove Promptly. Line Dry. Cool Iron If Needed. Can Be Drycleaned",
+                description: "Explore the pinnacle of craftsmanship and comfort with our Satin Wrapped Dress, Made from 100% Polyester, this piece offers both style and durability. Designed for the modern professional seeking to elevate their wardrobe for formal events. Experience the blend of functionality and elegance with G2000 today.",
+                frontImage: "images/Front_Satin.jpg",
+                backImage: "images/Back_Satin.jpg"
+            },
+            {
+                name: "Cotton Square Neck Pocket Stripe Midi Dress",
+                brand: "Trendyol",
+                material: "100% Cotton",
+                care: "Machine wash cold",
+                description: "This midi dress features a bold contrast stripe print, a square neckline, and button fastening. It's designed in a regular fit with two side pockets and is crafted from cotton. Made in Türkiye, this unlined dress offers a casual yet stylish look.",
+                frontImage: "images/Front_Square.jpg",
+                backImage: "images/Back_Square.jpg"
+            },
+            {
+                name: "Viscose Square Neck Patterned Midi Dress",
+                brand: "KOTON",
+                material: "100% Viscose",
+                care: "Machine wash cold",
+                description: "This midi dress showcases a mixed print design with a tiered hem, a square neckline, and a front tie fastening. 1  It features short sleeves and is crafted from viscose, offering a regular fit and an unlined construction.",
+                frontImage: "images/Front_Viscose.jpg",
+                backImage: "images/Back_Viscose.jpg"
+            },
+            {
+                name: "Organic Cotton Ruffled Dress",
+                brand: "Mango",
+                material: "80% Viscose LENZING™ECOVERO™, 20% Nylon",
+                care: "Machine wash cold",
+                description: "This floral print maxi dress features ruffled shoulders, a plunge V-neckline with a square back, and a frill hem. It's designed in a relaxed fit with a slip-on style and is fully lined. Crafted from organic cotton, it's noted that sizing runs one size larger.",
+                frontImage: "images/Front_Ruffled.jpg",
+                backImage: "images/Back_Ruffled.jpg"
+            },
+            {
+                name: "Natja Flora Long Sleeves Shirt Dress",
+                brand: "Vero Moda",
+                material: "100% Organic Cotton",
+                care: "Machine wash cold",
+                description: "This midi shirt dress features a printed design, a collared neckline, and a curved hem. It offers a regular fit with a button and waist tie fastening, long sleeves, and is crafted from a viscose blend. It is unlined.",
+                frontImage: "images/Front_Flora.jpg",
+                backImage: "images/Back_Flora.jpg"
+            },
+            {
+                name: "Embroidered Balloon Sleeves V-Neck Mini Beach Dress",
+                brand: "KOTON",
+                material: "70% Cotton, 30% Polyester",
+                care: "Machine washable",
+                description: "This mini dress features a solid tone with embroidered detailing, a V-neckline, and a ruffled hem. It's designed in a relaxed fit with balloon short sleeves and a slip-on style. Crafted from a cotton blend, it's made in Türkiye.",
+                frontImage: "images/Front_Balloon.jpg",
+                backImage: "images/Back_Balloon.jpg"
+            }
+        ];
+    
+        function updateDressDetails(dressIndex) {
+            const dress = dressData[dressIndex];
+    
+            document.querySelector('.dress-text h2').innerText = dress.name;
+            document.querySelector('.brand').innerText = dress.brand;
+            document.querySelector('.material-care p').innerHTML = `<strong>Material:</strong> ${dress.material}`;
+            document.querySelector('.material-care p + p').innerHTML = `<strong>Care Label:</strong> ${dress.care}`;
+            document.querySelector('.description p').innerText = dress.description;
+            document.querySelector('.dress-image img').src = dress.frontImage;
+    
+            const dressImageElement = document.querySelector('.dress-image img');
+            
+            dressImageElement.addEventListener('mouseenter', function() {
+                dressImageElement.src = dress.backImage;
+            });
+    
+            dressImageElement.addEventListener('mouseleave', function() {
+                dressImageElement.src = dress.frontImage;
+            });
+        }
+    
         function scrollDresses() {
             const dress1 = document.getElementById('dress1');
             const dress2 = document.getElementById('dress2');
             const dress3 = document.getElementById('dress3');
+            const dress4 = document.getElementById('dress4');
+            const dress5 = document.getElementById('dress5');
+            const dress6 = document.getElementById('dress6');
+            const dress7 = document.getElementById('dress7');
+            const dress8 = document.getElementById('dress8');
+            const dress9 = document.getElementById('dress9');
+            const dress10 = document.getElementById('dress10');
 
             dress1.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
             dress2.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
             dress3.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress4.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress5.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress6.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress7.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress8.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress9.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress10.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
 
-            if (currentDress === 3) {
+            dress1.style.display = 'block';
+            dress2.style.display = 'block';
+            dress3.style.display = 'block';
+            dress4.style.display = 'block';
+            dress5.style.display = 'block';
+            dress6.style.display = 'block';
+            dress7.style.display = 'block';
+            dress8.style.display = 'block';
+            dress9.style.display = 'block';
+            dress10.style.display = 'block';
+
+            if (currentDress === 10) {
                 dress1.style.display = 'none';
             } else {
                 dress1.style.display = 'block';
@@ -128,6 +286,29 @@
 
                 dress3.classList.add('dress-variation-small-right');
                 dress3.style.marginLeft = '1200px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1600px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '2000px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2400px';
+                
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '3200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3600px';
+                
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '4000px';
+
+                updateDressDetails(0);
             } else if (currentDress === 2) {
                 dress2.classList.add('dress-main');
                 dress2.style.marginLeft = '290px';
@@ -137,24 +318,254 @@
 
                 dress3.classList.add('dress-variation-small-right');
                 dress3.style.marginLeft = '800px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1200px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1600px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2000px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2400px'; 
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3600px';
+                                
+                updateDressDetails(1);
+                
             } else if (currentDress === 3) {
                 dress3.classList.add('dress-main');
                 dress3.style.marginLeft = '290px';
 
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-500px';
+
                 dress2.classList.add('dress-variation-small');
                 dress2.style.marginLeft = '-100px';
 
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '800px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1200px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1600px'; 
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2000px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2400px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3200px';
+
+                updateDressDetails(2);
+            } else if (currentDress === 4) {
+                dress1.style.display = 'none';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-500px';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-100px';
+
+                dress4.classList.add('dress-main');
+                dress4.style.marginLeft = '290px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '800px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1200px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1600px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2000px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2400px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2800px';
+
+                updateDressDetails(3);
+            } else if (currentDress === 5) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-500px';
+
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-100px';
+
+                dress5.classList.add('dress-main');
+                dress5.style.marginLeft = '290px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '800px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1200px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1600px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2000px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2400px';
+
+                updateDressDetails(4);
+            } else if (currentDress === 6) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-500px';
+
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-100px';
+
+                dress6.classList.add('dress-main');
+                dress6.style.marginLeft = '290px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1600px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2000px';
+
+                updateDressDetails(5);
+            }
+
+             else if (currentDress === 7) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-500px';
+
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-100px';
+
+                dress7.classList.add('dress-main');
+                dress7.style.marginLeft = '290px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1600px';
+
+                updateDressDetails(6);
+            }
+
+            else if (currentDress === 8) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-500px';
+
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-100px';
+
+                dress8.classList.add('dress-main');
+                dress8.style.marginLeft = '290px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1200px';
+
+                updateDressDetails(7);
+            }
+            
+            else if (currentDress === 9) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-500px';
+
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-100px';
+
+                dress9.classList.add('dress-main');
+                dress9.style.marginLeft = '290px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '800px';
+
+                updateDressDetails(8);
+            }
+
+            else if (currentDress === 10) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.style.display = 'none';
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-500px';
+
+                dress9.classList.add('dress-variation-small');
+                dress9.style.marginLeft = '-100px';
+
+                dress10.classList.add('dress-main');
+                dress10.style.marginLeft = '290px';
+
+                updateDressDetails(9);
             }
 
             currentDress++;
-            if (currentDress > 3) {
+            if (currentDress > 10) {
                 currentDress = 1;
             }
         }
 
         scrollDresses();
 
-        setInterval(scrollDresses, 10000);
+        setInterval(scrollDresses, 5000);
+
+
     </script>
+      
 </body>
 </html>
