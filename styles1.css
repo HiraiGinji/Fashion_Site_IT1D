@@ -28,6 +28,9 @@
 body {
     font-family: "Inter", sans-serif;
     background-color: #f0f0f0;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -45,7 +48,7 @@ header {
 .logo {
     position: absolute;
     top: 15px;
-    left: 35px;
+    left: 40px;
     font-size: 2.5rem;
     font-family: 'Adlery Pro', sans-serif;
     color: #e62727;
@@ -128,6 +131,7 @@ nav ul li .dropdown li a:hover {
 
 main {
     padding: 20px;
+    width: 1920px;
 }
 
 .dresses-intro {
@@ -251,14 +255,13 @@ main {
     margin-bottom: 0px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
 }
 
 .dress-image img {
-    transition: transform 1.5s ease;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
 }
-
-
-
 
 .dress-image img {
     width: 400px;
@@ -267,8 +270,8 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dress-image img:hover {
-    transform: rotatey(360deg);
+.dress-image img.flipped {
+    transform: rotateY(360deg);
 }
 
 .brand {
