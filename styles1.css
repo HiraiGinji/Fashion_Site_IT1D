@@ -26,7 +26,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Inter", sans-serif;
     background-color: #f0f0f0;
 }
 
@@ -288,7 +288,8 @@ main {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;  
+    font-style: normal;
+    color: #ffffff;
 }
 
 .material-care p,
