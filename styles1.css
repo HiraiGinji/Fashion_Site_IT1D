@@ -61,7 +61,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 5vw;
+    margin: 0 4.2vw;
     position: relative;
 }
 
@@ -254,12 +254,10 @@ main {
 }
 
 .dress-image img {
-    transition: transform 2s ease;
+    transition: transform 1.5s ease;
 }
 
-.dress-image img:hover {
-    transform: rotatey(180deg);
-}
+
 
 
 .dress-image img {
@@ -267,6 +265,10 @@ main {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dress-image img:hover {
+    transform: rotatey(360deg);
 }
 
 .brand {

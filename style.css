@@ -60,7 +60,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 5vw;
+    margin: 0 4.2vw;
     position: relative;
 }
 nav ul li::before {
@@ -495,7 +495,7 @@ main {
 }
     
     nav ul li {
-        margin: 0 5vw;
+        margin: 0 4.2vw;
         position: relative;
     }
 
