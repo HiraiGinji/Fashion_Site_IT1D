@@ -19,7 +19,7 @@
                         <li><a href="jeans.html">Jeans</a></li>
                         <li><a href="shoes.html">Shoes</a></li>
                         <li><a href="bags.html">Bags</a></li>
-                        <li><a href="#">Acces.</a></li>
+                        <li><a href="accessories.html">Acces.</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Gallery</a>
@@ -89,7 +89,11 @@
             </div>
         </section>
 
-        <br><br><br><br><br><br><br>
+        <div class="next-button-container">
+            <button id="nextButton" class="next-button">Next</button>
+        </div>
+
+        <br>
         <section class="dress-details">
             <div class="details-container">
                 <div class="details-content">
@@ -120,6 +124,7 @@
 
     <script>
         let currentDress = 1;
+        let intervalId;
     
         const dressData = [
             {
@@ -560,15 +565,18 @@
             }
 
             currentDress++;
-            if (currentDress > 10) {
-                currentDress = 1;
+                if (currentDress > 10) {
+                    currentDress = 1;
+                }
             }
-        }
+            scrollDresses();
 
-        scrollDresses();
+            intervalId = setInterval(scrollDresses, 10000);
 
-        setInterval(scrollDresses, 10000);
-
+            document.getElementById('nextButton').addEventListener('click', function() {
+                scrollDresses(); 
+            });
+            </script>
 
     </script>
       

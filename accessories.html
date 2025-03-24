@@ -1,0 +1,582 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bags - TokyoFuku</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">TokyoFuku</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Outfits</a>
+                    <ul class="dropdown">
+                        <li><a href="dresses.html">Dresses</a></li>
+                        <li><a href="clothes.html">Clothes</a></li>
+                        <li><a href="jeans.html">Jeans</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="#">Acces.</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Street Kei</a></li>
+                        <li><a href="#">Visual Kei</a></li>
+                        <li><a href="#">Lolita</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fit & Styles</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Color Combo</a></li>
+                        <li><a href="#">Physique</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Editorial</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Designers</a>
+                    <ul class="dropdown">
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dresses-intro">
+            <h1>ACCESSORIES</h1>
+        </section>
+
+        <section class="dress-display">
+            <div class="dress-images" id="dressImagesContainer">
+                <div class="dress-main" id="dress1">
+                    <img src="images/DIGWATCH_acc.png" alt="Midi Dress">
+                </div>
+                <div class="dress-variation-small" id="dress2">
+                    <img src="images/OPTICAL_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress3">
+                    <img src="images/SCARF_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress4">
+                    <img src="images/BRACELET_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress5">
+                    <img src="images/BOWCLIP_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress6">
+                    <img src="images/CASE_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress7">
+                    <img src="images/BELT_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress8">
+                    <img src="images/WALLET_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress9">
+                    <img src="images/TIE_acc.png">
+                </div>
+                <div class="dress-variation-small" id="dress10">
+                    <img src="images/GLOVES_acc.png">
+                </div>
+            </div>
+        </section>
+
+        <div class="next-button-container">
+            <button id="nextButton" class="next-button">Next</button>
+        </div>
+
+        <br>
+        <section class="dress-details">
+            <div class="details-container">
+                <div class="details-content">
+                    <div class="dress-image">
+                        <img src="images/Front_Sweetheart.jpg" alt="Dress Image">
+                    </div>
+        
+                    <div class="dress-text">
+                        <h2>Name of Dress</h2>
+                        <p class="brand">Brand</p>
+                        <div class="material-care">
+                            <h3>Material and Care</h3>
+                            <p><strong>Material:</strong> 88% Polyester, 12% Elastane</p>
+                            <p style="border-bottom: 2px solid #FFFFFF;"><strong>Care Label:</strong> Machine washable</p>
+                        </div>
+                        <div class="description">
+                            <p>Add a detailed description of the dress here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TokyoFuku. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentDress = 1;
+        let intervalId;
+    
+        const dressData = [
+            {
+                name: "Sector Ex-46 43mm Unisex Digital Watch R3251242501",
+                brand: "Sector",
+                material: "PLASTIC",
+                care: "Dear customer, we provide 2-year warranty for all of our products. The hands, dial, and watch movement are covered under the warranty. If the watch proves to be defective in material or under normal use, it will be repaired or replaced free of charge.",
+                description: "Sector Official Store watch, an Italian design since 1980, features a 43mm case with a thickness of 11.3mm and a plastic lens. It has a digital movement and a plastic strap, is water-resistant to 5 ATM, and comes with a 3-year international warranty.",
+                frontImage: "images/Front_Digitalwatch.jpg",
+                backImage: "images/Back_Digitalwatch.jpg"
+            },
+            {
+                name: "Ray-Ban Vista - RX5411D 2000 - Optical",
+                brand: "Ray-Ban",
+                material: "Acetate",
+                care: "Wipe with Fabric",
+                description: "As the world's most famous eyewear brand, as well as the inventors of both the Aviator and Wayfarer sunglasses, Ray-Ban has cultivated a well-deserved reputation for trendsetting. Every frame they sell is constructed with the highest quality components. Their fresh styling, with a contemporary, yet vintage, look continually appeals to millions of loyal customers.",
+                frontImage: "images/Front_Optical.jpg",
+                backImage: "images/Back_Optical.jpg"
+            },
+            {
+                name: "Plaid Woven Scarf",
+                brand: "DeFacto",
+                material: "99% Acrylic, 1% Wool",
+                care: "Delicate Wash",
+                description: "This brown plaid woven scarf, crafted in Türkiye, offers a classic and versatile accessory.",
+                frontImage: "images/Front_Scarf.jpg",
+                backImage: "images/Back_Scarf.jpg"
+            },
+            {
+                name: "Morellato Poetica 60mm Women's Gold Stainless Steel Crystals Bracelets SAUZ34",
+                brand: "Morellato",
+                material: "Steel,crystals,IPG",
+                care: "Dear customer, We recommend that you avoid their contact with creams, perfumes or detergents.",
+                description: "This Morellato Poetica bracelet, from the Morellato Official Store and an Italian design since 1930, is crafted from steel, crystals, and IPG materials. It weighs 32.49 grams and features a 60mm size for women, presented in a gold stainless steel design with crystals.",
+                frontImage: "images/Front_Bracelet.jpg",
+                backImage: "images/Back_Bracelet.jpg"
+            },
+            {
+                name: "Ditsy Floral Printed Large Bow Hair Clip",
+                brand: "Golden Ticket Super Savers",
+                material: "Fabric Metal",
+                care: "Avoid excessive pulling to maintain the shape of the bow. Store in a dry place to prevent damage to the fabric and clip.",
+                description: "Add a touch of elegance and charm to your hairstyle with this Ditsy Floral Printed Large Bow Hair Clip. Designed with a delicate floral print and flowing ribbon tails, this bow barrette effortlessly enhances any outfit, whether you're dressing up for a special occasion or adding a stylish flair to your everyday look.",
+                frontImage: "images/Front_Bowclip.jpg",
+                backImage: "images/Back_Bowclip.jpg"
+            },
+            {
+                name: "Samsung S23 Ultra UAG Plyo Pro MagSafe Shockproof Case",
+                brand: "MobileHubs",
+                material: "Plastic",
+                care: "Clean with soft cloth",
+                description: "The UAG PLYO PRO Series case offers serious lightweight protection with a visually striking translucent honeycomb design. It features impact-resistant bumpers and a shock-resistant armor shell for protection. This lightweight case boasts a low-profile perimeter edge with a traction grip, a protective screen surround, and oversized tactile buttons. It provides 16 ft (4.8 meters) drop protection and includes an ultra-lightweight impact frame and a tactile grip for secure handling. The case showcases the signature UAG armor frame.",
+                frontImage: "images/Front_Case.jpg",
+                backImage: "images/Back_Case.jpg"
+            },
+            {
+                name: "Braided Leather Belt",
+                brand: "Cortefiel",
+                material: "100% Cowhide",
+                care: "Do not wash. Do not bleach. Do not tumble dry. Do not iron. Do not dry clean.",
+                description: "This handmade braided belt is crafted from high-quality leather tanned using more sustainable practices, including the use of renewable energies and water-reducing technologies. It has a width of 4 cm.",
+                frontImage: "images/Front_Belt.jpg",
+                backImage: "images/Back_Belt.jpg"
+            },
+            {
+                name: "Bellroy Note Sleeve Wallet (RFID Protected) - Everglade",
+                brand: "Bellroy",
+                material: "Woven Fabric",
+                care: "Do not wash. Do not bleach. Do not tumble dry. Do not iron. Do not dry clean.",
+                description: "The Note Sleeve is a trim, professional billfold with a traditional design and surprising storage. It can hold 4 to 11+ cards and offers RFID protection. Features include three quick-access slots, a pull tab for less-used cards, a full-sized note section, and a coin pocket. Made from premium, environmentally certified leather, it's backed by a 3-year warranty. Its dimensions are 102mm x 90mm and it weighs 0.1kg. The materials used are premium, gold-rated Leather Working Group environmentally certified leather and sustainably produced woven fabrics.",
+                frontImage: "images/Front_Wallet.jpg",
+                backImage: "images/Back_Wallet.jpg"
+            },
+            {
+                name: "Animal-Jacquard Slim Tie",
+                brand: "COS",
+                material: "Shell: 100% Recycled polyester",
+                care: "Delicate Laundry Detergent",
+                description: "No expertly tailored suit is complete without a smart tie. Made from recycled fabric, this one is jacquard-woven with an abstract animal motif and has a subtle keeper to hold the back blade in place. The 7cm width will accommodate a number of different knots.",
+                frontImage: "images/Front_Tie.jpg",
+                backImage: "images/Back_Tie.jpg"
+            },
+            {
+                name: "100% Leather Gloves With Ruffled Detail",
+                brand: "MANGO Man",
+                material: "Sheep Leather",
+                care: "Delicate Laundry Detergent",
+                description: "These solid-tone gloves are made from sheep leather and feature gathered detailing. They have a slip-on style and a lined interior for added comfort.",
+                frontImage: "images/Front_Gloves.jpg",
+                backImage: "images/Back_Gloves.jpg"
+            }
+        ];
+    
+        function updateDressDetails(dressIndex) {
+            const dress = dressData[dressIndex];
+            
+            document.querySelector('.dress-text h2').innerText = dress.name;
+            document.querySelector('.brand').innerText = dress.brand;
+            document.querySelector('.material-care p').innerHTML = `<strong>Material:</strong> ${dress.material}`;
+            document.querySelector('.material-care p + p').innerHTML = `<strong>Care Label:</strong> ${dress.care}`;
+            document.querySelector('.description p').innerText = dress.description;
+            
+            const dressImageElement = document.querySelector('.dress-image img');
+            dressImageElement.src = dress.frontImage;
+            dressImageElement.classList.remove('flipped');
+            
+            if (dressImageElement.flipTimeout) {
+                clearTimeout(dressImageElement.flipTimeout);
+            }
+            
+            dressImageElement.flipTimeout = setTimeout(() => {
+                dressImageElement.src = dress.backImage;
+                dressImageElement.classList.add('flipped');
+                
+                setTimeout(() => {
+                    dressImageElement.src = dress.frontImage;
+                    dressImageElement.classList.remove('flipped');
+                }, 4000);
+            }, 3000);
+        }
+    
+        function scrollDresses() {
+            const dress1 = document.getElementById('dress1');
+            const dress2 = document.getElementById('dress2');
+            const dress3 = document.getElementById('dress3');
+            const dress4 = document.getElementById('dress4');
+            const dress5 = document.getElementById('dress5');
+            const dress6 = document.getElementById('dress6');
+            const dress7 = document.getElementById('dress7');
+            const dress8 = document.getElementById('dress8');
+            const dress9 = document.getElementById('dress9');
+            const dress10 = document.getElementById('dress10');
+
+            dress1.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress2.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress3.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress4.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress5.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress6.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress7.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress8.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress9.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress10.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+
+            dress1.style.display = 'block';
+            dress2.style.display = 'block';
+            dress3.style.display = 'block';
+            dress4.style.display = 'block';
+            dress5.style.display = 'block';
+            dress6.style.display = 'block';
+            dress7.style.display = 'block';
+            dress8.style.display = 'block';
+            dress9.style.display = 'block';
+            dress10.style.display = 'block';
+
+            if (currentDress === 10) {
+                dress1.style.display = 'none';
+            } else {
+                dress1.style.display = 'block';
+            }
+
+            if (currentDress === 1) {
+                dress1.classList.add('dress-main');
+                dress1.style.marginLeft = '290px';
+
+                dress2.classList.add('dress-variation-small-right');
+                dress2.style.marginLeft = '800px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '1200px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1600px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '2000px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2400px';
+                
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '3200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3600px';
+                
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '4000px';
+
+                updateDressDetails(0);
+            } else if (currentDress === 2) {
+                dress2.classList.add('dress-main');
+                dress2.style.marginLeft = '290px';
+
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-100px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '800px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1200px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1600px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2000px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2400px'; 
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3600px';
+                                
+                updateDressDetails(1);
+                
+            } else if (currentDress === 3) {
+                dress3.classList.add('dress-main');
+                dress3.style.marginLeft = '290px';
+
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-500px';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-100px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '800px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1200px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1600px'; 
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2000px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2400px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3200px';
+
+                updateDressDetails(2);
+            } else if (currentDress === 4) {
+                dress1.style.display = 'none';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-500px';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-100px';
+
+                dress4.classList.add('dress-main');
+                dress4.style.marginLeft = '290px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '800px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1200px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1600px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2000px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2400px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2800px';
+
+                updateDressDetails(3);
+            } else if (currentDress === 5) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-500px';
+
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-100px';
+
+                dress5.classList.add('dress-main');
+                dress5.style.marginLeft = '290px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '800px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1200px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1600px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2000px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2400px';
+
+                updateDressDetails(4);
+            } else if (currentDress === 6) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-500px';
+
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-100px';
+
+                dress6.classList.add('dress-main');
+                dress6.style.marginLeft = '290px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1600px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2000px';
+
+                updateDressDetails(5);
+            }
+
+             else if (currentDress === 7) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-500px';
+
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-100px';
+
+                dress7.classList.add('dress-main');
+                dress7.style.marginLeft = '290px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1600px';
+
+                updateDressDetails(6);
+            }
+
+            else if (currentDress === 8) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-500px';
+
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-100px';
+
+                dress8.classList.add('dress-main');
+                dress8.style.marginLeft = '290px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1200px';
+
+                updateDressDetails(7);
+            }
+            
+            else if (currentDress === 9) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-500px';
+
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-100px';
+
+                dress9.classList.add('dress-main');
+                dress9.style.marginLeft = '290px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '800px';
+
+                updateDressDetails(8);
+            }
+
+            else if (currentDress === 10) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.style.display = 'none';
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-500px';
+
+                dress9.classList.add('dress-variation-small');
+                dress9.style.marginLeft = '-100px';
+
+                dress10.classList.add('dress-main');
+                dress10.style.marginLeft = '290px';
+
+                updateDressDetails(9);
+            }
+
+            currentDress++;
+                if (currentDress > 10) {
+                    currentDress = 1;
+                }
+            }
+            scrollDresses();
+
+            intervalId = setInterval(scrollDresses, 10000);
+
+            document.getElementById('nextButton').addEventListener('click', function() {
+                scrollDresses(); 
+            });
+            </script>
+      
+</body>
+</html>
