@@ -1,0 +1,569 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes - TokyoFuku</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo">TokyoFuku</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Outfits</a>
+                    <ul class="dropdown">
+                        <li><a href="dresses.html">Dresses</a></li>
+                        <li><a href="clothes.html">Clothes</a></li>
+                        <li><a href="jeans.html">Jeans</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Acces.</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Street Kei</a></li>
+                        <li><a href="#">Visual Kei</a></li>
+                        <li><a href="#">Lolita</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Fit & Styles</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Color Combo</a></li>
+                        <li><a href="#">Physique</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Editorial</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Designers</a>
+                    <ul class="dropdown">
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dresses-intro">
+            <h1>JEANS</h1>
+        </section>
+
+        <section class="dress-display">
+            <div class="dress-images" id="dressImagesContainer">
+                <div class="dress-main" id="dress1">
+                    <img src="images/MARTHA_shoes.png" alt="Midi Dress">
+                </div>
+                <div class="dress-variation-small" id="dress2">
+                    <img src="images/CHARLENE_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress3">
+                    <img src="images/TENNIS_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress4">
+                    <img src="images/CHROMEFREE_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress5">
+                    <img src="images/MILANO_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress6">
+                    <img src="images/COSMIC_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress7">
+                    <img src="images/CORE_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress8">
+                    <img src="images/LOW_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress9">
+                    <img src="images/LIFESTYLE_shoes.png">
+                </div>
+                <div class="dress-variation-small" id="dress10">
+                    <img src="images/TAZZ_shoes.png">
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br><br>
+        <section class="dress-details">
+            <div class="details-container">
+                <div class="details-content">
+                    <div class="dress-image">
+                        <img src="images/Front_Sweetheart.jpg" alt="Dress Image">
+                    </div>
+        
+                    <div class="dress-text">
+                        <h2>Name of Dress</h2>
+                        <p class="brand">Brand</p>
+                        <div class="material-care">
+                            <h3>Material and Care</h3>
+                            <p><strong>Material:</strong> 88% Polyester, 12% Elastane</p>
+                            <p style="border-bottom: 2px solid #FFFFFF;"><strong>Care Label:</strong> Machine washable</p>
+                        </div>
+                        <div class="description">
+                            <p>Add a detailed description of the dress here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TokyoFuku. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let currentDress = 1;
+    
+        const dressData = [
+            {
+                name: "Martha Crystals",
+                brand: "Kenneth Cole",
+                material: "Microsuede",
+                care: "Spot Clean",
+                description: "These Martha Crystals slingback shoes in black feature a low heel (0-5.5cm) and a pointed, closed toe. Made from microsuede, they have a buckle fastening and are part of the Fall 2023 collection. Please note that this non-sale item is excluded from vouchers and discounts.",
+                frontImage: "images/Front_Martha.jpg",
+                backImage: "images/Back_Martha.jpg"
+            },
+            {
+                name: "Women's D Charlene Flat Shoes",
+                brand: "GEOX",
+                material: "Leather",
+                care: "Use soft cloth/brush to remove obvious dirt and dust.",
+                description: "Live your everyday life in freedom with Respira™ shoes. Browse models in the Geox collection designed to offer breathability and comfort, from morning to evening.",
+                frontImage: "images/Front_Charlene.jpg",
+                backImage: "images/Back_Charlene.jpg"
+            },
+            {
+                name: "Tennis Canvas Sneakers",
+                brand: "Kawasaki Footwear",
+                material: "Textile Rubber",
+                care: "Spot Clean",
+                description: "These solid-tone sneakers feature a canvas upper, a textile insole, and a durable rubber outsole. They have a classic round toe and a lace-up fastening.",
+                frontImage: "images/Front_Tennis.jpg",
+                backImage: "images/Back_Tennis.jpg"
+            },
+            {
+                name: "Recife Logo Chromefree Sneakers",
+                brand: "Veja",
+                material: "ChromeFree leather",
+                care: "Spot Clean",
+                description: "These sneakers feature a leather upper with logo detailing and a velcro closure for easy wear. They have a round toe and a comfortable textile inner. The outsole is made from Amazonian rubber, and the upper is ChromeFree leather.",
+                frontImage: "images/Front_Chromefree.jpg",
+                backImage: "images/Back_Chromefree.jpg"
+            },
+            {
+                name: "Milano BF",
+                brand: "Birkenstock",
+                material: "Birko-Flor - a synthetic material",
+                care: "Use soft cloth/brush to remove obvious dirt and dust.",
+                description: "If you are on the go a lot, this style's for you. The adjustable heel strap helps keep you secure. Contoured cork foot bed provides great arch support and the lightweight EVA soles are durable and flexible.",
+                frontImage: "images/Front_Milano.jpg",
+                backImage: "images/Back_Milano.jpg"
+            },
+            {
+                name: "Cosmic Unity 3",
+                brand: "Nike",
+                material: "Flyknit Synthetic Rubber",
+                care: "Use soft cloth/brush to remove obvious dirt and dust.",
+                description: "The Nike Cosmic Unity 3 Basketball Shoes are designed for basketball with a focus on sustainability. They feature a lightweight design with a secure fit, a Flyknit upper, and a synthetic inner. The shoes provide cushioned support with a foam midsole and a rubber outsole for traction. They have a lace-up closure and a round toe. These shoes are built for explosive speed and quick changes in direction on the court.",
+                frontImage: "images/Front_Cosmic.jpg",
+                backImage: "images/Back_Cosmic.jpg"
+            },
+            {
+                name: "Chuck Taylor All Star Core Hi Sneakers",
+                brand: "Converse",
+                material: "Textile Rubber",
+                care: "Use soft cloth/brush to remove obvious dirt and dust.",
+                description: "These high-top sneakers feature a solid tone design with a graphic logo patch. They have a canvas upper, a textile insole, and a durable rubber outsole. The sneakers have a classic round toe and a lace-up fastening.",
+                frontImage: "images/Front_Core.jpg",
+                backImage: "images/Back_Core.jpg"
+            },
+            {
+                name: "Forum Low CL Shoes",
+                brand: "ADIDAS",
+                material: "Leather Textile Rubber",
+                care: "Use soft cloth/brush to remove obvious dirt and dust.",
+                description: "Soft needlecord trousers, the perfect winter alternative to jeans. Sizes 18-28 have an elasticated back waist.",
+                frontImage: "images/Front_Low.jpg",
+                backImage: "images/Back_Low.jpg"
+            },
+            {
+                name: "574 Kids Lifestyle Shoes",
+                brand: "New Balance",
+                material: "Cow Leather, PU, Mesh",
+                care: "Use soft cloth/brush to remove obvious dirt and dust.",
+                description: "These colorblock sneakers are best for lifestyle wear and feature mesh and suede paneling with a stitched logo. They have a textile insole and a rubber outsole. Convenient pull tabs and a velcro fastening provide easy wear, while the rounded toe offers a comfortable fit. The width is M.",
+                frontImage: "images/Front_Lifestyle.jpg",
+                backImage: "images/Back_Lifestyle.jpg"
+            },
+            {
+                name: "Women's Tazz Slipper - Sand (1122553-SAN)",
+                brand: "UGG",
+                material: "Suede",
+                care: "Use soft cloth/brush to remove obvious dirt and dust.",
+                description: "These shoes feature a suede upper and a choice of UGGbraid made with either 70% recycled polyester and 30% rayon, or 100% recycled polyester. 1  The lining and insole are made with 10mm UGGplush™ containing either 80% upcycled wool and 20% TENCEL™ Lyocell, or 60% upcycled wool and 40% TENCEL™ Lyocell. They have an EVA midsole and a Sugarcane EVA Outsole or Treadlite by UGG™ EVA outsole. 1  The textile binding is made from 100% recycled polyester fibers, and they have a 1.75 platform height with a heat-embossed UGG® logo.",
+                frontImage: "images/Front_Tazz.jpg",
+                backImage: "images/Back_Tazz.jpg"
+            }
+        ];
+    
+        function updateDressDetails(dressIndex) {
+            const dress = dressData[dressIndex];
+    
+            document.querySelector('.dress-text h2').innerText = dress.name;
+            document.querySelector('.brand').innerText = dress.brand;
+            document.querySelector('.material-care p').innerHTML = `<strong>Material:</strong> ${dress.material}`;
+            document.querySelector('.material-care p + p').innerHTML = `<strong>Care Label:</strong> ${dress.care}`;
+            document.querySelector('.description p').innerText = dress.description;
+            document.querySelector('.dress-image img').src = dress.frontImage;
+    
+            const dressImageElement = document.querySelector('.dress-image img');
+            
+            dressImageElement.addEventListener('mouseenter', function() {
+                dressImageElement.src = dress.backImage;
+            });
+    
+            dressImageElement.addEventListener('mouseleave', function() {
+                dressImageElement.src = dress.frontImage;
+            });
+        }
+    
+        function scrollDresses() {
+            const dress1 = document.getElementById('dress1');
+            const dress2 = document.getElementById('dress2');
+            const dress3 = document.getElementById('dress3');
+            const dress4 = document.getElementById('dress4');
+            const dress5 = document.getElementById('dress5');
+            const dress6 = document.getElementById('dress6');
+            const dress7 = document.getElementById('dress7');
+            const dress8 = document.getElementById('dress8');
+            const dress9 = document.getElementById('dress9');
+            const dress10 = document.getElementById('dress10');
+
+            dress1.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress2.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress3.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress4.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress5.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress6.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress7.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress8.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress9.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+            dress10.classList.remove('dress-main', 'dress-variation-small', 'dress-variation-small-right');
+
+            dress1.style.display = 'block';
+            dress2.style.display = 'block';
+            dress3.style.display = 'block';
+            dress4.style.display = 'block';
+            dress5.style.display = 'block';
+            dress6.style.display = 'block';
+            dress7.style.display = 'block';
+            dress8.style.display = 'block';
+            dress9.style.display = 'block';
+            dress10.style.display = 'block';
+
+            if (currentDress === 10) {
+                dress1.style.display = 'none';
+            } else {
+                dress1.style.display = 'block';
+            }
+
+            if (currentDress === 1) {
+                dress1.classList.add('dress-main');
+                dress1.style.marginLeft = '290px';
+
+                dress2.classList.add('dress-variation-small-right');
+                dress2.style.marginLeft = '800px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '1200px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1600px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '2000px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2400px';
+                
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '3200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3600px';
+                
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '4000px';
+
+                updateDressDetails(0);
+            } else if (currentDress === 2) {
+                dress2.classList.add('dress-main');
+                dress2.style.marginLeft = '290px';
+
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-100px';
+
+                dress3.classList.add('dress-variation-small-right');
+                dress3.style.marginLeft = '800px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '1200px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1600px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '2000px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2400px'; 
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '3200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3600px';
+                                
+                updateDressDetails(1);
+                
+            } else if (currentDress === 3) {
+                dress3.classList.add('dress-main');
+                dress3.style.marginLeft = '290px';
+
+                dress1.classList.add('dress-variation-small');
+                dress1.style.marginLeft = '-500px';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-100px';
+
+                dress4.classList.add('dress-variation-small-right');
+                dress4.style.marginLeft = '800px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '1200px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1600px'; 
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '2000px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2400px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '3200px';
+
+                updateDressDetails(2);
+            } else if (currentDress === 4) {
+                dress1.style.display = 'none';
+
+                dress2.classList.add('dress-variation-small');
+                dress2.style.marginLeft = '-500px';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-100px';
+
+                dress4.classList.add('dress-main');
+                dress4.style.marginLeft = '290px';
+
+                dress5.classList.add('dress-variation-small-right');
+                dress5.style.marginLeft = '800px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '1200px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1600px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '2000px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2400px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2800px';
+
+                updateDressDetails(3);
+            } else if (currentDress === 5) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+
+                dress3.classList.add('dress-variation-small');
+                dress3.style.marginLeft = '-500px';
+
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-100px';
+
+                dress5.classList.add('dress-main');
+                dress5.style.marginLeft = '290px';
+
+                dress6.classList.add('dress-variation-small-right');
+                dress6.style.marginLeft = '800px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '1200px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1600px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '2000px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2400px';
+
+                updateDressDetails(4);
+            } else if (currentDress === 6) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.classList.add('dress-variation-small');
+                dress4.style.marginLeft = '-500px';
+
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-100px';
+
+                dress6.classList.add('dress-main');
+                dress6.style.marginLeft = '290px';
+
+                dress7.classList.add('dress-variation-small-right');
+                dress7.style.marginLeft = '800px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '1200px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1600px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '2000px';
+
+                updateDressDetails(5);
+            }
+
+             else if (currentDress === 7) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.classList.add('dress-variation-small');
+                dress5.style.marginLeft = '-500px';
+
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-100px';
+
+                dress7.classList.add('dress-main');
+                dress7.style.marginLeft = '290px';
+
+                dress8.classList.add('dress-variation-small-right');
+                dress8.style.marginLeft = '800px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '1200px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1600px';
+
+                updateDressDetails(6);
+            }
+
+            else if (currentDress === 8) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.classList.add('dress-variation-small');
+                dress6.style.marginLeft = '-500px';
+
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-100px';
+
+                dress8.classList.add('dress-main');
+                dress8.style.marginLeft = '290px';
+
+                dress9.classList.add('dress-variation-small-right');
+                dress9.style.marginLeft = '800px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '1200px';
+
+                updateDressDetails(7);
+            }
+            
+            else if (currentDress === 9) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.classList.add('dress-variation-small');
+                dress7.style.marginLeft = '-500px';
+
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-100px';
+
+                dress9.classList.add('dress-main');
+                dress9.style.marginLeft = '290px';
+
+                dress10.classList.add('dress-variation-small-right');
+                dress10.style.marginLeft = '800px';
+
+                updateDressDetails(8);
+            }
+
+            else if (currentDress === 10) {
+                dress1.style.display = 'none';
+                dress2.style.display = 'none';
+                dress3.style.display = 'none';
+                dress4.style.display = 'none';
+                dress5.style.display = 'none';
+                dress6.style.display = 'none';
+                dress7.style.display = 'none';
+                dress8.classList.add('dress-variation-small');
+                dress8.style.marginLeft = '-500px';
+
+                dress9.classList.add('dress-variation-small');
+                dress9.style.marginLeft = '-100px';
+
+                dress10.classList.add('dress-main');
+                dress10.style.marginLeft = '290px';
+
+                updateDressDetails(9);
+            }
+
+            currentDress++;
+            if (currentDress > 10) {
+                currentDress = 1;
+            }
+        }
+
+        scrollDresses();
+
+        setInterval(scrollDresses, 10000);
+
+
+    </script>
+      
+</body>
+</html>
