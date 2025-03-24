@@ -1,0 +1,143 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | TokyoFuku</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .block1 {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .block1::before {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom,
+                rgba(255,255,255,0.1),
+                rgba(255,255,255,0.3),
+                rgba(255,255,255,0.1)
+            );
+            transform: rotate(45deg);
+            top: -50%;
+            left: -50%;
+            z-index: 1;
+            opacity: 0;
+            transition: all 0.6s ease;
+        }
+        
+        .block1:hover::before {
+            animation: shine 1.5s ease forwards;
+        }
+        
+        @keyframes shine {
+            0% {
+                left: -50%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                left: 150%;
+                opacity: 0;
+            }
+        }
+        
+        .block1:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .block1:hover .overlay {
+            opacity: 1;
+        }
+    </style></head>
+<body style="background: #F0F0F0; margin: 0; padding: 0;">
+    <header>
+        <div class="logo">TokyoFuku</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Outfits</a>
+                    <ul class="dropdown">
+                        <li><a href="dresses.html">Dresses</a></li>
+                        <li><a href="clothes.html">Clothes</a></li>
+                        <li><a href="jeans.html">Jeans</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="bags.html">Bags</a></li>
+                        <li><a href="accessories.html">Acces.</a></li>
+                    </ul></li>
+                <li><a href="gallery.html">Gallery</a>
+                    <ul class="dropdown">
+                        <li><a href="gallery.html#street-kei">Street Kei</a></li>
+                        <li><a href="gallery.html#visual-kei">Visual Kei</a></li>
+                        <li><a href="gallery.html#lolita">Lolita</a></li>
+                    </ul></li>
+                <li><a href="#">Fit & Styles</a>
+                    <ul class="dropdown">
+                        <li><a href="combination.html">Color Combo</a></li>
+                        <li><a href="physique.html">Physique</a></li>
+                    </ul></li>
+                <li><a href="news.html">News</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">Editorial</a></li>
+                    </ul></li>
+                <li><a href="designers.html">Designers</a>
+                    <ul class="dropdown">
+                        <li><a href="references.html">References</a></li>
+                    </ul></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <div class = "view">
+        <div class = "block1">
+            <img src = "images/PK.png" class = "blockimg">
+            <div class = "overlay"> kids have smaller physiques, so they should try a lot of cute outfits that can compliment their height. </div>
+        </div>
+        <div class = "block1">
+            <img src = "images/PT.png" class = "blockimg">
+            <div class = "overlay"> Teenagers are often cautious about what other people think. A simple and non-flashy outfit is most suited. The priority is basically comfort. </div>
+        </div>
+        <div class = "block1">
+            <img src = "images/PM.png" class = "blockimg">
+            <div class = "overlay"> Men usually have a large build. A Simple, cool and well-fitted is best when it comes to males. </div>
+        </div>
+        <div class = "block1">
+            <img src = "images/PF.png" class = "blockimg">
+            <div class = "overlay"> Women have so many different styles that could complement their beauty. But, nothing beats elegance above all else. </div>
+        </div>
+        <div class = "block1">
+            <img src = "images/PO.png" class = "blockimg">
+            <div class = "overlay"> The Elderly are frail and are prone to sickness. It is best for them to wear a lot of cover especially in Japan where it snows. </div>
+        </div>
+    </div>
+</body>
+</html>
