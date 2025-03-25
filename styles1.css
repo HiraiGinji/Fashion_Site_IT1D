@@ -40,14 +40,22 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: right;
     padding: 20px 30px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 5px auto 0 auto;
+    margin: 0 auto;
     max-width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+header.hide-nav {
+    transform: translateY(-100%);
 }
 
 .logo {

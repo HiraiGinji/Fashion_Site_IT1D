@@ -60,5 +60,33 @@
     <footer>
         <p>&copy; 2025 TokyoFuku. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            let lastScroll = 0;
+            const scrollThreshold = 5;
+            
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset;
+                
+                if (currentScroll <= 0) {
+                    header.classList.remove('hide-nav');
+                    return;
+                }
+                
+                if (currentScroll > lastScroll && 
+                    currentScroll > header.offsetHeight && 
+                    !header.classList.contains('hide-nav')) {
+                    header.classList.add('hide-nav');
+                } else if (currentScroll < lastScroll && 
+                           header.classList.contains('hide-nav')) {
+                    header.classList.remove('hide-nav');
+                }
+                
+                lastScroll = currentScroll;
+            });
+        });
+        </script>
 </body>
 </html>

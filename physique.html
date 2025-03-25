@@ -139,5 +139,33 @@
             <div class = "overlay"> The Elderly are frail and are prone to sickness. It is best for them to wear a lot of cover especially in Japan where it snows. </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            let lastScroll = 0;
+            const scrollThreshold = 5;
+            
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset;
+                
+                if (currentScroll <= 0) {
+                    header.classList.remove('hide-nav');
+                    return;
+                }
+                
+                if (currentScroll > lastScroll && 
+                    currentScroll > header.offsetHeight && 
+                    !header.classList.contains('hide-nav')) {
+                    header.classList.add('hide-nav');
+                } else if (currentScroll < lastScroll && 
+                           header.classList.contains('hide-nav')) {
+                    header.classList.remove('hide-nav');
+                }
+                
+                lastScroll = currentScroll;
+            });
+        });
+        </script>
 </body>
 </html>
